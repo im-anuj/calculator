@@ -60,3 +60,52 @@ button:active{
 .operator-btn:active{
     background-color: hsl(35, 100%, 75%);
 }
+
+@media (max-width: 768px) {
+    .calculator {
+        max-width: 340px;
+    }
+    
+    .css-result {
+        font-size: 3rem;
+        height: 55px;
+        padding: 15px;
+    }
+    
+    .keys {
+        gap: 5px;
+        padding: 15px;
+    }
+    
+    button {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+        border-radius: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        max-width: 235px;
+    }
+    
+    .css-result {
+        font-size: 2rem;
+        height: 35px;
+        padding: 10px;
+    }
+    
+    .keys {
+        gap: 5px;
+        padding: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        border-radius: 30px;
+    }
+}
